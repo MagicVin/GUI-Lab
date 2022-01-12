@@ -1,4 +1,4 @@
-#Layers of the graphical user interface [wiki](https://en.wikipedia.org/wiki/Window_manager)
+# Layers of the graphical user interface [wiki](https://en.wikipedia.org/wiki/Window_manager)
 
 > Under X, the window manager and the display server are two distinct programs;
 
