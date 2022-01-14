@@ -17,10 +17,10 @@
 
 <table>
   <tr>
-    <th cellspan="6">Desktop Environments and Window Manager based on X11 or Wayland</th>
+    <th colspan="6">Desktop Environments and Window Manager based on X11 or Wayland</th>
    </tr>
   <tr>
-    <td rowspan="2">Desktop Environments</td>
+    <td rowspan="3">Desktop Environments</td>
     <td>GTK-based</td>
     <td>GNOME</td>
     <td>LXDE</td>
@@ -34,4 +34,19 @@
     <td>LXQt</td>
     <td>Trinity</td>
   </tr> 
+  <tr>
+    <td>Other</td>
+    <td>EDE(FLTK-based)</td>
+    <td>OpenWindows(OLIT-based)</td>
+    <td>Enlightenment(EFL-based)</td>
+    <td>UDE(Xlib/XCB-based)</td>
+  </tr>
+  <tr>
+    <td>Graphical Shells</td>
+    <td>Deepin</td>
+    <td>GNOME Shell</td>
+    <td>KED Plasma 4&5</td>
+    <td>Unity</td>
+    <td>Maynard</td>
+  </tr>
 </table>
