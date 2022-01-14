@@ -5,6 +5,8 @@
 Window managers are unique to Xorg. The equivalent of window managers on Wayland are called compositors because they also act as compositing window managers.
 
 ![stru](https://upload.wikimedia.org/wikipedia/commons/9/95/Schema_of_the_layers_of_the_graphical_user_interface.svg)
+![windows](https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Window_%28windowing_system%29.svg/512px-Window_%28windowing_system%29.svg.png)
+
 
 **Imaging from people**  
 [DevynCJohnson:](https://www.linux.org/threads/the-structure-of-a-gui.10399/) Under X, the window manager and the display server are two distinct programs;
