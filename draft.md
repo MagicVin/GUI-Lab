@@ -49,4 +49,26 @@
     <td>Unity</td>
     <td>Maynard</td>
   </tr>
+  <tr>
+    <td rowspan="3">X Window Managers</td>
+    <td>Compositing</td>
+    <td>Compiz</td>
+    <td>KWin</td>
+    <td>Enlightenment</td>
+    <td>XFWM</td>
+  </tr>
+  <tr>
+    <td>Stacking</td>
+    <td>Fluxbox</td>
+    <td>OpenBox</td>
+    <td>4Dwm</td>
+    <td>FVWM</td>
+  </tr> 
+  <tr>
+    <td>Tiling</td>
+    <td>awesome</td>
+    <td>dwm</td>
+    <td>i3</td>
+    <td>bspwm</td>
+  </tr> 
 </table>
