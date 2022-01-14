@@ -76,7 +76,7 @@
   </tr> 
 </table>
 
-## Difference: Desktops Environments and Window Managers
+## [Difference: Desktops Environments and Window Managers](https://www.engadget.com/2012-10-30-how-to-picking-a-window-manager-linux.html)
 A Desktop Environment is a fully featured graphical user interface to aid with the interaction with your operating system. DEs typically provide a handful of applications bundled together to accomplish tasks in a graphical manner as opposed to using the command line. They often come with a desktop shell, which is a place to hold your fancy shortcut icons, as well as other tools such as file managers. Think Windows' Explorer or OS X 's Finder. And of course, a DE provides a means to manage your currently open application windows. Said differently, a Desktop Environment also provides a Window Manager.
 
 A Window Manager, on the other hand, has the much more streamlined task of simply managine how you interact with your application windows without all of the extra bloat. WM's are often designed to be highly customizable via configuration files or graphical settings tools, and typically do a single job: managing your application windows. That is, they provide a method to start an application, move a window around, resize your application window and close said window.
