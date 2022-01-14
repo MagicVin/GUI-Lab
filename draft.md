@@ -8,7 +8,30 @@
 ![windows](https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Window_%28windowing_system%29.svg/512px-Window_%28windowing_system%29.svg.png)
 
 | The main Desktop Environments | looks like     |
-|-------------------------------|----------------|
+| :-----------------------------| :--------------|
 | The lastest default GNOME     | OS X           |
 | KED 3.x                       | Windows XP     |    
 | KED 4.x                       | Windows Vista  |
+
+
+
+<table>
+  <tr>
+    <th cellspan="6">Desktop Environments and Window Manager based on X11 or Wayland</th>
+   </tr>
+  <tr>
+    <td rowspan="2">Desktop Environments</td>
+    <td>GTK-based</td>
+    <td>GNOME</td>
+    <td>LXDE</td>
+    <td>MATE</td>
+    <td>XFCE</td>
+  </tr>
+  <tr>
+    <td>Qt-based</td>
+    <td>Deepin</td>
+    <td>Lumina</td>
+    <td>LXQt</td>
+    <td>Trinity</td>
+  </tr> 
+</table>
