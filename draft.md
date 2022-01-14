@@ -17,7 +17,9 @@
 
 <table>
   <tr>
-    <th colspan="6">Desktop Environments and Window Manager based on X11 or Wayland</th>
+    <th colspan="6">Desktop Environments and Window Manager based on X11 or Wayland
+    <a href=https://en.wikipedia.org/wiki/Enlightenment_(software)>Wiki</a>
+    </th>
    </tr>
   <tr>
     <td rowspan="3">Desktop Environments</td>
