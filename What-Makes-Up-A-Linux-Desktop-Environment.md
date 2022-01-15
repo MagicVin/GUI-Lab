@@ -6,9 +6,9 @@ There are many Linux desktop environments available, including but not limited t
 1. Window Manager  
 A window manager determines how applications are presented to the user on the screen.
 There are different types of window managers available:
-* Compositing: Modern Linux desktop environments use compositing to display windows. Windows appear on top of each other, snap side by side, and look pleasing to the eye.
-* Stacking: A stacking window manager places windows on top of each other but they look more old-fashioned.
-* Tiling: A tiling window manager puts windows side by side without letting them overlap.  
+  * Compositing: Modern Linux desktop environments use compositing to display windows. Windows appear on top of each other, snap side by side, and look pleasing to the eye.
+  * Stacking: A stacking window manager places windows on top of each other but they look more old-fashioned.
+  * Tiling: A tiling window manager puts windows side by side without letting them overlap.  
 Typically, a window can have borders, be minimized and maximized, be resized, and be dragged around the screen. The window has a title, may contain a context menu, and items can be selected with the mouse.  
 A window manager lets you tab between windows, send them to a taskbar(also know as a panel), snap the windows side by side, and perform other tasks.
 
@@ -16,4 +16,20 @@ A window manager lets you tab between windows, send them to a taskbar(also know 
 In the Windows operating system, the panel is the taskbar. Linux can have multiple panels on the screen.  
 A panel generally sits at the edge of the screen either at the top, bottom, left, or right. The panel contains items such as a menu, quick launch icons, minimized applications, and a system tray or notification area.
 
-3. 
+3. Menu  
+Most Linux desktop environments include a menu and quite often it is enacted by clicking an icon attached to a panel. Some desktop environments and some window managers allow you to click anywhere on the desktop to display the menu.  
+
+4. System Tray  
+A system tray is generally attached to a panel and provides access to key settings such as Audio, Network, Power, User, Bluetooth, Notifications, and Clock.  
+5. Icons 
+Icons provide instant access to applications. An icon links to a file with a .desktop extension which provides a link to an executable program. The .desktop file also contains the path to the image to use for the icon as well as the category for the application which in used in menus.
+
+6. Widgets
+Widgets provide useful information to the user straight to the desktop. Common widgets provide system information, news, sports result, and the weather.
+
+7. Launcher
+Unique to Unity and the GNOME desktop, a launcher provides a list of quick launch icons which, when clicked, load the linked application. Other Linux desktop environments allow you to create panels or docks which include launchers to provide the same functionality.
+8. Dashboards
+The Unity and GNOME desktop environments include a dash style interface that can be displayed by pressing the super key(pn most laptops this is a key with the Windows logo). The dash style interface provides a series of icons in categories which, when clicked, open the linked application.
+
+
