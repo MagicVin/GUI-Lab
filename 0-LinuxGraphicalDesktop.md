@@ -55,7 +55,8 @@ In the X Window System, the X server runs on the computer in front of the user. 
   - Screensavers would require a password to allow users to see the desktop and interact with the machine.
   - Screensavers may be simple like a solid color or they can be graphics intensive like a video game.
 
-* Windows Manager - The Window Manager is the piece of the puzzle that controls the placement and appearance of windows. Window Managers including: Enlightenment, Afterstep, FVWM, Fluxbox, IceWM, etc. Requires X Windows but not a desktop environment.
+* Windows Manager 
+  - The Window Manager is the piece of the puzzle that controls the placement and appearance of windows. Window Managers including: Enlightenment, Afterstep, FVWM, Fluxbox, IceWM, etc. Requires X Windows but not a desktop environment.
 * Desktop Envrionment
   > DE = Windowing system(e.g. Xorg) + Window Manager(e.g. Awesome) + Widget toolkit(e.g. Qt, GTK) + Display Manager(e.g. lightDM) + other softwares  
   - It is a collection of software that provides a standard look and feel.
