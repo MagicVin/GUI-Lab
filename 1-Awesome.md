@@ -32,12 +32,13 @@ In the X Window System, the X server runs on the computer in front of the user. 
 
 
 * X11 (X Window System Version 11)
-  - X11 is a system which implements the X displat protocol.
+  - X11 is a system which implements the X displaY protocol.
   - It is a **protocol used** by the common windowing system called **Xorg** used on Linux systems.
 * Xorg:
   - It is a **windowing system**, allows the movement of windows and input interactions(such as the mouse and keyboard)
-* Xlib:
-  - It is a **C Programming library** for interacting with display servers using the **X11 protocol**
+* Xlib(also known as libX11):
+  - It is an **X Window System** protocol client library written in the C Programming language. It contains functions for interacting with an **X Server**.
+
 * Widget-toolkit:
   > It is a set of software or a library that works with the window manager to design the window's appearance.
   > It defines how a window should appear.  
