@@ -38,7 +38,8 @@ In the X Window System, the X server runs on the computer in front of the user. 
   - It is a **windowing system**, allows the movement of windows and input interactions(such as the mouse and keyboard)
 * Xlib(also known as libX11):
   - It is an **X Window System** protocol client library written in the C Programming language. It contains functions for interacting with an **X Server**.
-
+  ![X](https://upload.wikimedia.org/wikipedia/commons/d/dc/Xlib_and_XCB_in_the_X_Window_System_graphics_stack.svg)
+  ![X](https://upload.wikimedia.org/wikipedia/commons/3/3b/SDL_Layers.svg)
 * Widget-toolkit:
   > It is a set of software or a library that works with the window manager to design the window's appearance.
   > It defines how a window should appear.  
