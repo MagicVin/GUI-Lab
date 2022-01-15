@@ -15,4 +15,4 @@ Packages to install:
 * xorg-server   -- the X server
 * lua           -- programming language for awesome customization
 * xterm         -- the default shell used by awesome
-* terminus-font -- front
+* terminus-font -- font
