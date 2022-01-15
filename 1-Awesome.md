@@ -24,6 +24,15 @@ There are some important concepts:
   - SDL
   - AWT
   - Motif
+
+* Display Manager:
+  - It is the **login screen**. LightDM, KDM(KDE display manager), GDM(GNOME Display Manager), etc.
+  - There are pieces of software that manage the appearance of the login screen.
+* Desktop Environment:
+  > It is a collection of software that provides a standard look and feel.
+  - For example, the KDE Plasma Desktop uses the X11 windowing system, the KWin window manager, the Qt widget, the KDE display manager, and the KDE Software Compilatopm. 
+ 
+
 * Screensaver:
   - It is special program that protect the screen from phosphor burn-in on CRT(tube-based monitors) and plasma monitors. 
   - However, they are also used for entertainment and security purposes. 
