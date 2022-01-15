@@ -29,3 +29,8 @@ There are some important concepts:
   - However, they are also used for entertainment and security purposes. 
   - Screensavers can be set to activate when the workstation has not seen any activity from the user.
   - Screensavers would require a password to allow users to see the desktop and interact with the machine.
+  - Screensavers may be simple like a solid color or they can be graphics intensive like a video game.
+
+
+**Refers**
+* [The structure of a gui](https://www.linux.org/threads/the-structure-of-a-gui.10399/)
