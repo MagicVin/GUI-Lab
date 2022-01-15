@@ -147,6 +147,6 @@ A Window Manager, on the other hand, has the much more streamlined task of simpl
 
 
 
-Refers:
-[The structure of a gui](https://www.linux.org/threads/the-structure-of-a-gui.10399/)
-[Get to Know Linux: Desktop Environment vs. Window Manager](https://www.ghacks.net/2008/12/09/get-to-know-linux-desktop-environment-vs-window-manager/)
+Refers:  
+[The structure of a gui](https://www.linux.org/threads/the-structure-of-a-gui.10399/)  
+[Get to Know Linux: Desktop Environment vs. Window Manager](https://www.ghacks.net/2008/12/09/get-to-know-linux-desktop-environment-vs-window-manager/)  
