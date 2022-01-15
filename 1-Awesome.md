@@ -21,6 +21,8 @@ There are some important concepts:
  
  * [X display manager](https://en.wikipedia.org/wiki/X_display_manager)
   - In the **X Window System**, an **X display manager** is a graphical **login manager** which starts a login session on an **X Server** from the same or another computer.
+  - A display manager presents the user with a login screen. A seesion starts when a user successfully enters a valid combination username and password.
+  - When the display manager runs on the user's computer, it starts the **X Server**before presenting the user the login screen, optionally repeating when the user logs out.
 
 
 
