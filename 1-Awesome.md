@@ -14,6 +14,9 @@ There are some important concepts:
   - X provides the basic framework for a GUI environment: drawing and moving windows on the display device and interacting with a mouse and keyboard.
   - X originated as part of Project Athena at Massachusetts Institute of Technoligy(MIT) in 1984. The X protocol has been at version 11(X11) since September 1987.
   - The X.Org Foundation leads the X project, with the current reference implementation, X.Org Server, available as free and open source softwar under the MIT License and similar permissive license.
+![X Window System](https://en.wikipedia.org/wiki/File:Xserver_and_display_manager.svg)
+
+
 * [X terminal](https://en.wikipedia.org/wiki/X_terminal)
   - In computing, an **X terminal** is a display/input terminal for **X Window System** client applications.
   - An X terminal runs as an **X Server**. In X, the usage of "client" and "Server" is from the viewpoint of the programs: 
