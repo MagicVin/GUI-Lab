@@ -9,11 +9,20 @@ There are some important concepts:
 * Windowing system(display server):
   - It is the core of most GUIs, most windowing systems use the WIMP structure(Windows, Icons, Menus, Pointer).
   - Windowing systems provide the basica framework for other parts of the GUI.
-* X Window System
+* [X Window System](https://en.wikipedia.org/wiki/X_Window_System)
   - The X Window System(X11, Or simply X) is a **Windowing system** for bitmap displays, common on Unix-like operating systems.
+  - X provides the basic framework for a GUI environment: drawing and moving windows on the display device and interacting with a mouse and keyboard.
+  - X originated as part of Project Athena at Massachusetts Institute of Technoligy(MIT) in 1984. The X protocol has been at version 11(X11) since September 1987.
+  - The X.Org Foundation leads the X project, with the current reference implementation, X.Org Server, available as free and open source softwar under the MIT License and similar permissive license.
+* [X terminal](https://en.wikipedia.org/wiki/X_terminal)
+  - In computing, an **X terminal** is a display/input terminal for **X Window System** client applications.
+  - An X terminal runs as an **X Server**. In X, the usage of "client" and "Server" is from the viewpoint of the programs: 
+    + the X server supplies a screen, keyboard, mouse and touchscreen to client applications. This connects to an "X display manager"(introduced in X11R3) running on a central machine, using XDMCP(X Display Manager Control Protocol, introduced in X11R4).
+ 
+ * [X display manager](https://en.wikipedia.org/wiki/X_display_manager)
+  - In the **X Window System**, an **X display manager** is a graphical **login manager** which starts a login session on an **X Server** from the same or another computer.
 
 
-![X Window System](https://en.wikipedia.org/wiki/File:Twm.png)
 
 
 * X11 (X Window System Version 11)
