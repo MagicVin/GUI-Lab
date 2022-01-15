@@ -9,7 +9,15 @@ There are some important concepts:
 * Windowing system(display server):
   - It is the core of most GUIs, most windowing systems use the WIMP structure(Windows, Icons, Menus, Pointer).
   - Windowing systems provide the basica framework for other parts of the GUI.
+* X Window System
+  - The X Window System(X11, Or simply X) is a **Windowing system** for bitmap displays, common on Unix-like operating systems.
+
+
+![X Window System](https://en.wikipedia.org/wiki/File:Twm.png)
+
+
 * X11 (X Window System Version 11)
+  - X11 is a system which implements the X displat protocol.
   - It is a **protocol used** by the common windowing system called **Xorg** used on Linux systems.
 * Xorg:
   - It is a **windowing system**, allows the movement of windows and input interactions(such as the mouse and keyboard)
