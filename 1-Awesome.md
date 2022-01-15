@@ -24,4 +24,8 @@ There are some important concepts:
   - SDL
   - AWT
   - Motif
-* \
+* Screensaver:
+  - It is special program that protect the screen from phosphor burn-in on CRT(tube-based monitors) and plasma monitors. 
+  - However, they are also used for entertainment and security purposes. 
+  - Screensavers can be set to activate when the workstation has not seen any activity from the user.
+  - Screensavers would require a password to allow users to see the desktop and interact with the machine.
