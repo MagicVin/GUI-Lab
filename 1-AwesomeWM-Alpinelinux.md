@@ -29,4 +29,5 @@ Packages to install:
 |6. # rc-service dbus start|
 |7. # rc-update add lightdm|
 |8. # rc-service lightdm start|
+|9. # reboot|
 |(start with "#" shows the root user, "$" shows the other user )|
