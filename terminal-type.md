@@ -17,3 +17,15 @@ On a Unix-like system, enter one of the following lines at your shell prompt, de
 | csh or tcsh | setenv TERM vt100 |
 | sh          | TERM=vt100; export TERM |
 | ksh, bash or zsh | export TERM=vt100 | 
+
+## Setting the terminal type permanently
+If you'd rather not type these lines each time you log into your account, you may add this line to the initialization file located in the home directory of your account. Consult the list below for the name of the initialization file for your particular shell:
+| **Shell** | **Login file** |
+|:----------|:---------------|
+| csh       | .cshrc or .login |
+| tch       | .cshrc           |
+| ksh       | .profile         |
+| zsh       | .zshrc           |
+| bash      | .bash_profile    |
+
+[Refer](https://kb.iu.edu/d/acpy)
