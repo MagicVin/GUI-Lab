@@ -28,4 +28,4 @@ If you'd rather not type these lines each time you log into your account, you ma
 | zsh       | .zshrc           |
 | bash      | .bash_profile    |
 
-[Refer](https://kb.iu.edu/d/acpy)
+[Refer Article](https://kb.iu.edu/d/acpy)
