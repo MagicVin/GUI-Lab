@@ -37,14 +37,18 @@
   
   
   VT100 Widget Resources -- Xresources syntax: "XTerm.vt100.NAME"  
-
   If your xterm is configured to support the "toolbar", then those patterns need an extra level for the form-widget which holds the toolbar and vt100 widget. A wildcard between the top-level "XTerm" and the "vt100" widget makes the resource settings work for either, e.g., "XTerm*vt100.NAME".  
+  * scrollBar (class ScrollBar)
+  Specifies whether or not the scrollbar should be displayed. the default is "false".  
+  * translations (class Translations)
+  
+  
   
   
   * Specify the **TERM** variable  
   Create a user profile file(~/.Xresources) if it does not exist, then add the following contents:   
   ```
-    XTerm.TermName: vt100
+    XTerm.termName: vt100
   ```  
   (set currently used xterm type as vt100)
   * Enable the scrollbar  
