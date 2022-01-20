@@ -4,5 +4,7 @@
   ## Emulations
   xterm provides usable emulations of related DEC terminals:
   * VT52 emulation is complete.
-  * VT102 emulator is fairly complete, but does not support autorepeat(because that would affect the keyboard by other X clients)
+  * VT102 emulator is fairly complete, but does not support autorepeat(because that would affect the keyboard by other X clients).
+    Double-size characters are displayed properly if your font server supports scalable bitmap fonts.
+   
   * 
