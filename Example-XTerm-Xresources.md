@@ -16,4 +16,5 @@
     * vt100
     * ansi
     * dumb
+  XTerm automatically searches the terminal database in this order for those entries and then set the "TERM" variable(and the "TERMCAP" environment variable on a few older system). The alternatives after "xterm" are very old, from the 1980s.
    
