@@ -6,5 +6,7 @@
   * VT52 emulation is complete.
   * VT102 emulator is fairly complete, but does not support autorepeat(because that would affect the keyboard by other X clients).
     Double-size characters are displayed properly if your font server supports scalable bitmap fonts.
+  * VT220 emulation does not support soft fonts, it is otherwise complete.
+  * VT420 emulation(the default) supports controls manipulating rectangles of characters as well as left/right margins.
+    Xterm does not support some other features which are not suitable for emulation, e.g., two-sessions.
    
-  * 
