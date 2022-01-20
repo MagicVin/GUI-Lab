@@ -23,6 +23,10 @@
   More details to see `man xterm` (I don't want to type the words any more).
   
   ## Examples 
-  * Specify the **TERM** variable
+  * Specify the **TERM** variable  
   Create a user profile file(~/.Xresources) if it does not exist, then add the following contents:   
-  ```XTerm.TermName: vt100```
+  ```XTerm.TermName: vt100```  
+  (set currently used xterm type as vt100)
+  * Enable the scrollbar 
+  ```XTerm.vt100.scrollBar: true```
+  * 
