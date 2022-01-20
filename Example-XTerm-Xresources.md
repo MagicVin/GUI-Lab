@@ -43,12 +43,29 @@
   If your xterm is configured to support the "toolbar", then those patterns need an extra level for the form-widget which holds the toolbar and vt100 widget. A wildcard between the top-level "XTerm" and the "vt100" widget makes the resource settings work for either, e.g., "XTerm*vt100.NAME".  
   * scrollBar (class ScrollBar)  
     Specifies whether or not the scrollbar should be displayed. the default is "false".  
-    ```
-      XTerm.vt100.scrollBar: true
-    ```
-
   * translations (class Translations)  
-    Specifies the key and button bindings for menus, selections, "programmed strings", etc. The translations resource, which provides much of xterm's configurability, is a feature of the X Toolkit Intrinsics library(Xt).  
+    Specifies the key and button bindings for menus, selections, "programmed strings", etc. The translations resource, which provides much of xterm's configurability, is a feature of the X Toolkit Intrinsics library(Xt).
+  * copy-selection(destname [, ...])
+    This action puts the currentlyselected text into all of the selections or cutbuffers specified by destname. Unlike select-end, it does not send a mouse position or otherwise modify the internal selection state.
+  * insert-selection(sourcename [, ...])
+    This action inserts the string found in the selection or cutbuffer indicated by sourcename. Sources are checked in the order given(case is significant) until one is found. Commonly-used selections include: PRIMARY, SECONDARY, and CLIPBOARD. Cut buffers are typically named CUT_BUFFER0 through CUT_BUFFER7.
+  * larger-vt-font()
+    Set the font to the next larger one, based on the font dimensions.
+  * smaller-vt-font()
+    Set the font to the next smaller one, based on the font dimensions.
+  * scroll-back(count [,units] [,mouse])
+    This action scrolls the text window backward so that text that had previously scrolled off the top of the screen is now visible.  
+    The count argument indicates the number of units (which may be page, halfpage, pixel, or line) by which to scroll. If no count parameter is given, xterm uses the number of lines given by the scrollLines resource.  
+    An adjustment can be specified for the page or halfpage units by appending a "+" or "-" sign followed by a number, e.g., page-2 to specify 2 lines less than a page.  
+    If the second parameter is omitted "lines" is used.  
+    If the third parameter mouse is given, the action is ignored when mouse reporting is enable.
+  * scroll-forw(count [,units [,mouse]])
+    This action is similar to scroll-back except that is scrolls in the other direction.
+    
+    - Display the scrollBar
+      ```
+        XTerm.vt100.scrollBar: true
+      ```
     - Enable copy/paste if there is no `xclipboard` client support  
       (**Ctrl**+**Shift**+**C**: copy; **Ctrl**+**Shift**+**V**: paste)
       ```
@@ -79,7 +96,7 @@
       (**Ctrl**+**+**: zoom in; **Ctrl**+**-**: zoom out)
       ```
         XTerm.vt100.translation:        #override   \n \
-          Ctrl <Key>+:  larger-vt-font()            \n \
-          Ctrl <Key>-:  smaller-vt-font()  
+           Ctrl <Key>+:  larger-vt-font()            \n \
+           Ctrl <Key>-:  smaller-vt-font()  
       ```
      
