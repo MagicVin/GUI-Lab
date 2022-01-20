@@ -32,6 +32,8 @@
   Again, the actual resource type is a string, parsed and used when needed.  
   
   Application specific resources(e.g., "XTerm.NAME")
+  * termName(class TermName)  
+  Specifies the terminal type name to be set in the TERM environment variable.
   
   
   VT100 Widget Resources -- Xresources syntax: "XTerm.vt100.NAME"  
