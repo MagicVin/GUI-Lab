@@ -19,3 +19,10 @@
     
   XTerm automatically searches the terminal database in this order for those entries and then set the "TERM" variable(and the "TERMCAP" environment variable on a few older system). The alternatives after "xterm" are very old, from the 1980s.
    
+  VT100 and VT102 emulations are commonly equated, though they actually differ. The VT102 provided controls for inserting and deleting lines.  
+  More details to see `man xterm` (I don't want to type the words any more).
+  
+  ## Examples 
+  * Specify the **TERM** variable
+  Create a user profile file(~/.Xresources) if it does not exist, then add the following contents:   
+  ```XTerm.TermName: vt100```
