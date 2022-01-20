@@ -22,7 +22,23 @@
   VT100 and VT102 emulations are commonly equated, though they actually differ. The VT102 provided controls for inserting and deleting lines.  
   More details to see `man xterm` (I don't want to type the words any more).
   
-  ## Examples 
+  ## Examples -- Resources
+  XTerm understands all of the core X Toolkit resource names and classes.  
+  It also uses the X Toolkit resource types(such as booleans, colors, fonts, integers, and strings) along with their respective converters.
+  Those resource types are not always sufficient:  
+  * Xterm's resource values may be lists of names. X Toolkit resource types do not include lists. Xterm uses a string for the resource, and parses it.  
+  Comma-separated lists of names ignore case.    
+  * Xterm may defer processing a resource until it is needed. For example, font2 through font7 are loaded as needed, to start faster.  
+  Again, the actual resource type is a string, parsed and used when needed.  
+  
+  Application specific resources(e.g., "XTerm.NAME")
+  
+  
+  VT100 Widget Resources -- Xresources syntax: "XTerm.vt100.NAME"  
+
+  If your xterm is configured to support the "toolbar", then those patterns need an extra level for the form-widget which holds the toolbar and vt100 widget. A wildcard between the top-level "XTerm" and the "vt100" widget makes the resource settings work for either, e.g., "XTerm*vt100.NAME".  
+  
+  
   * Specify the **TERM** variable  
   Create a user profile file(~/.Xresources) if it does not exist, then add the following contents:   
   ```
