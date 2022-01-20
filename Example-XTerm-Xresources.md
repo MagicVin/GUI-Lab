@@ -24,6 +24,7 @@
   
   ## Examples -- Resources
   XTerm understands all of the core X Toolkit resource names and classes.  
+  Create a user profile file(~/.Xresources) if it does not exist, then add the following contents:   
   It also uses the X Toolkit resource types(such as booleans, colors, fonts, integers, and strings) along with their respective converters.
   Those resource types are not always sufficient:  
   * xterm's resource values may be lists of names. X Toolkit resource types do not include lists. Xterm uses a string for the resource, and parses it.  
@@ -31,33 +32,30 @@
   * xterm may defer processing a resource until it is needed. For example, font2 through font7 are loaded as needed, to start faster.  
   Again, the actual resource type is a string, parsed and used when needed.  
   
-  Application specific resources(e.g., "XTerm.NAME")
+  ### Application specific resources(e.g., "XTerm.NAME")
   * termName(class TermName)  
-  Specifies the terminal type name to be set in the TERM environment variable.
+    Specifies the terminal type name to be set in the TERM environment variable.
+    ```
+      XTerm.termName: vt100
+    ```  
   
-  
-  VT100 Widget Resources -- Xresources syntax: "XTerm.vt100.NAME"  
+  ### VT100 Widget Resources(e.g., "XTerm.vt100.NAME") 
   If your xterm is configured to support the "toolbar", then those patterns need an extra level for the form-widget which holds the toolbar and vt100 widget. A wildcard between the top-level "XTerm" and the "vt100" widget makes the resource settings work for either, e.g., "XTerm*vt100.NAME".  
-  * scrollBar (class ScrollBar)
-  Specifies whether or not the scrollbar should be displayed. the default is "false".  
-  * translations (class Translations)
-  
-  
-  
-  
-  * Specify the **TERM** variable  
-  Create a user profile file(~/.Xresources) if it does not exist, then add the following contents:   
-  ```
-    XTerm.termName: vt100
-  ```  
-  (set currently used xterm type as vt100)
-  * Enable the scrollbar  
-  ```
-    XTerm.vt100.scrollBar: true
-  ```
-  * Enable copy/paste while there is no `xclipboard` client installed
-  ```
-    XTerm.VT100.translations:       #override \n \
-       Ctrl Shift<KeyPress>C: copy-selection(CLIPBOARD) \n \
-       Ctrl Shift<KeyPress>V: insert-selection(CLIPBOARD)
-  ```
+  * scrollBar (class ScrollBar)  
+    Specifies whether or not the scrollbar should be displayed. the default is "false".  
+    ```
+      XTerm.vt100.scrollBar: true
+    ```
+
+  * translations (class Translations)  
+    Specifies the key and button bindings for menus, selections, "programmed strings", etc. The translations resource, which provides much of xterm's configurability, is a feature of the X Toolkit Intrinsics library(Xt).  
+    
+    Enable copy/paste while there is no `xclipboard` client installed  
+    ```
+      XTerm.VT100.translations:       #override \n \
+         Ctrl Shift<KeyPress>C: copy-selection(CLIPBOARD) \n \
+         Ctrl Shift<KeyPress>V: insert-selection(CLIPBOARD)
+    ```
+    > Check the **clipboard** work/install or not:
+    > command ```vim --version```, ***-clipboard***: clipboard does not support; ***+clipboard***: clipboard does support. 
+      
