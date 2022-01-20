@@ -8,5 +8,12 @@
     Double-size characters are displayed properly if your font server supports scalable bitmap fonts.
   * VT220 emulation does not support soft fonts, it is otherwise complete.
   * VT420 emulation(the default) supports controls manipulating rectangles of characters as well as left/right margins.
-    Xterm does not support some other features which are not suitable for emulation, e.g., two-sessions.
+    Xterm does not support some other features which are not suitable for emulation, e.g., two-sessions.  
+  Terminal database:
+    * an optional platform-specific entry("xterm")
+    * xterm
+    * vt102
+    * vt100
+    * ansi
+    * dumb
    
