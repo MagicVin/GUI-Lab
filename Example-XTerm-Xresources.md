@@ -27,6 +27,11 @@
   Create a user profile file(~/.Xresources) if it does not exist, then add the following contents:   
   ```XTerm.TermName: vt100```  
   (set currently used xterm type as vt100)
-  * Enable the scrollbar 
+  * Enable the scrollbar  
   ```XTerm.vt100.scrollBar: true```
-  * 
+  * Enable copy/paste while there is no `xclipboard` client installed
+  ```
+  XTerm.VT100.translations:       #override \n \
+       Ctrl Shift<KeyPress>C: copy-selection(CLIPBOARD) \n \
+       Ctrl Shift<KeyPress>V: insert-selection(CLIPBOARD)
+  ```
