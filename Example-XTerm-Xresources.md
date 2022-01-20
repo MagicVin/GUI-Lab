@@ -26,9 +26,9 @@
   XTerm understands all of the core X Toolkit resource names and classes.  
   It also uses the X Toolkit resource types(such as booleans, colors, fonts, integers, and strings) along with their respective converters.
   Those resource types are not always sufficient:  
-  * Xterm's resource values may be lists of names. X Toolkit resource types do not include lists. Xterm uses a string for the resource, and parses it.  
+  * xterm's resource values may be lists of names. X Toolkit resource types do not include lists. Xterm uses a string for the resource, and parses it.  
   Comma-separated lists of names ignore case.    
-  * Xterm may defer processing a resource until it is needed. For example, font2 through font7 are loaded as needed, to start faster.  
+  * xterm may defer processing a resource until it is needed. For example, font2 through font7 are loaded as needed, to start faster.  
   Again, the actual resource type is a string, parsed and used when needed.  
   
   Application specific resources(e.g., "XTerm.NAME")
