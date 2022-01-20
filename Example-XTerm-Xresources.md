@@ -50,14 +50,20 @@
   * translations (class Translations)  
     Specifies the key and button bindings for menus, selections, "programmed strings", etc. The translations resource, which provides much of xterm's configurability, is a feature of the X Toolkit Intrinsics library(Xt).  
     
-    Enable copy/paste if there is no `xclipboard` client support
-    (ctrl+shift c: copy; ctrl+shift v: paste)
-    ```
-      XTerm.vt100.translations:       #override \n \
-         Ctrl Shift<KeyPress>C: copy-selection(CLIPBOARD) \n \
-         Ctrl Shift<KeyPress>V: insert-selection(CLIPBOARD)
-    ```
-    > Checking for X11-clipboard support in terminal, check the result: ```vim --version```  
-    > ***-clipboard*** or ***-xterm_clipboard***: clipboard does not support  
-    > ***+clipboard*** or ***+xterm_clipboard***: clipboard does support. 
-      
+    - Enable copy/paste if there is no `xclipboard` client support
+      (ctrl+shift c: copy; ctrl+shift v: paste)
+      ```
+        XTerm.vt100.translations:       #override \n \
+           Ctrl Shift<KeyPress>C: copy-selection(CLIPBOARD) \n \
+           Ctrl Shift<KeyPress>V: insert-selection(CLIPBOARD)
+      ```
+      > Checking for X11-clipboard support in terminal, check the result: ```vim --version```  
+      > ***-clipboard*** or ***-xterm_clipboard***: clipboard does not support  
+      > ***+clipboard*** or ***+xterm_clipboard***: clipboard does support. 
+    - Enable PageUp and PageDown Keys
+      ```
+        XTerm.vt100.translations:       #override \n \
+           Shift <KeyPress> Prior: scroll-back(1, halfpage) \n \
+           Shift <KeyPress> Next : scroll-forw(1, halfpage) \n \  
+      ```
+     
