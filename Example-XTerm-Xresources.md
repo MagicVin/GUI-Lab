@@ -50,12 +50,14 @@
   * translations (class Translations)  
     Specifies the key and button bindings for menus, selections, "programmed strings", etc. The translations resource, which provides much of xterm's configurability, is a feature of the X Toolkit Intrinsics library(Xt).  
     
-    Enable copy/paste while there is no `xclipboard` client installed  
+    Enable copy/paste while there is no `xclipboard` client support  
     ```
       XTerm.VT100.translations:       #override \n \
          Ctrl Shift<KeyPress>C: copy-selection(CLIPBOARD) \n \
          Ctrl Shift<KeyPress>V: insert-selection(CLIPBOARD)
     ```
-    > Check the **clipboard** work/install or not:
-    > command ```vim --version```, ***-clipboard***: clipboard does not support; ***+clipboard***: clipboard does support. 
+    > Checking for X11-clipboard support in terminal 
+    > Check the output of ```vim --version```  
+    > ***-clipboard*** or ***-xterm_clipboard***: clipboard does not support  
+    > ***+clipboard*** or ***+xterm_clipboard***: clipboard does support. 
       
