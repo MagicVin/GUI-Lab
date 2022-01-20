@@ -22,7 +22,7 @@
   VT100 and VT102 emulations are commonly equated, though they actually differ. The VT102 provided controls for inserting and deleting lines.  
   More details to see `man xterm` (I don't want to type the words any more).
   
-  ## Examples -- Resources
+  ## Resources
   XTerm understands all of the core X Toolkit resource names and classes.  
   Create a user profile file(~/.Xresources) if it does not exist, then add the following contents:   
   It also uses the X Toolkit resource types(such as booleans, colors, fonts, integers, and strings) along with their respective converters.
@@ -62,41 +62,45 @@
   * scroll-forw(count [,units [,mouse]])
     This action is similar to scroll-back except that is scrolls in the other direction.
     
-    - Display the scrollBar
-      ```
-        XTerm.vt100.scrollBar: true
-      ```
-    - Enable copy/paste if there is no `xclipboard` client support  
-      (**Ctrl**+**Shift**+**C**: copy; **Ctrl**+**Shift**+**V**: paste)
-      ```
-        XTerm.vt100.translations:       #override \n \
-           Ctrl Shift<KeyPress>C: copy-selection(CLIPBOARD) \n \
-           Ctrl Shift<KeyPress>V: insert-selection(CLIPBOARD)
-      ```
-      > Checking for X11-clipboard support in terminal, check the result: ```vim --version```  
-      > ***-clipboard*** or ***-xterm_clipboard***: clipboard does not support  
-      > ***+clipboard*** or ***+xterm_clipboard***: clipboard does support
-    - **Ext-enable** copy/paste  
-        (**Shift**+**Home**|**Shift**+**Insert**|**Ctrl**+**Shift**+**C**: copy; **Ctrl**+**Shift**+**V**: paste )
-      ```
-        XTerm.vt100.translations:       #override        \n \
-           Shift <Key>Home:     copy-selection(SELECT)   \n \
-           Shift <Key>Insert:   copy-selection(SELECT)   \n \
-           Ctrl Shift <Key>C:   copy-selection(SELECT)   \n \
-           Ctrl Shift <Key>V:   insert-selection(SELECT) \n 
-      ```
-    - Enable PageUp and PageDown Keys  
-      (**Shift**+**PgUp**: page up; **Shift**+**PgDn**: page down)
-      ```
-        XTerm.vt100.translations:       #override           \n \
-           Shift <KeyPress> Prior: scroll-back(1, halfpage) \n \
-           Shift <KeyPress> Next : scroll-forw(1, halfpage) \n \  
-      ```
-    - Enable switching between font size  
-      (**Ctrl**+**+**: zoom in; **Ctrl**+**-**: zoom out)
-      ```
-        XTerm.vt100.translation:        #override   \n \
-           Ctrl <Key>+:  larger-vt-font()            \n \
-           Ctrl <Key>-:  smaller-vt-font()  
-      ```
+  ### Examples
+  
+  * Display the scrollBar
+    ```
+      XTerm.vt100.scrollBar: true
+    ```  
+  * Enable copy/paste if there is no `xclipboard` client support  
+    (**Ctrl**+**Shift**+**C**: copy; **Ctrl**+**Shift**+**V**: paste)
+    ```
+      XTerm.vt100.translations:       #override \n \
+         Ctrl Shift<KeyPress>C: copy-selection(CLIPBOARD) \n \
+         Ctrl Shift<KeyPress>V: insert-selection(CLIPBOARD)
+    ```
+    > Checking for X11-clipboard support in terminal, check the result: ```vim --version```  
+    > ***-clipboard*** or ***-xterm_clipboard***: clipboard does not support  
+    > ***+clipboard*** or ***+xterm_clipboard***: clipboard does support  
+      
+  * **Ext** enable copy/paste  
+    (**Shift**+**Home**|**Shift**+**Insert**|**Ctrl**+**Shift**+**C**: copy; **Ctrl**+**Shift**+**V**: paste )
+    ```
+      XTerm.vt100.translations:       #override        \n \
+         Shift <Key>Home:     copy-selection(SELECT)   \n \
+         Shift <Key>Insert:   copy-selection(SELECT)   \n \
+         Ctrl Shift <Key>C:   copy-selection(SELECT)   \n \
+         Ctrl Shift <Key>V:   insert-selection(SELECT) \n 
+    ```  
+  * Enable PageUp and PageDown Keys  
+    (**Shift**+**PgUp**: page up; **Shift**+**PgDn**: page down)
+    ```
+      XTerm.vt100.translations:       #override           \n \
+         Shift <KeyPress> Prior: scroll-back(1, halfpage) \n \
+         Shift <KeyPress> Next : scroll-forw(1, halfpage) \n \  
+    ```  
+  * Enable switching between font size  
+    (**Ctrl**+**+**: zoom in; **Ctrl**+**-**: zoom out)
+    ```
+      XTerm.vt100.translation:        #override   \n \
+         Ctrl <Key>+:  larger-vt-font()            \n \
+         Ctrl <Key>-:  smaller-vt-font()  
+    ```
      
+ 
