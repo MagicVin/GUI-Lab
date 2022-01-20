@@ -49,8 +49,7 @@
 
   * translations (class Translations)  
     Specifies the key and button bindings for menus, selections, "programmed strings", etc. The translations resource, which provides much of xterm's configurability, is a feature of the X Toolkit Intrinsics library(Xt).  
-  * 
-    - Enable copy/paste if there is no `xclipboard` client support
+    - Enable copy/paste if there is no `xclipboard` client support  
       (**Ctrl**+**Shift**+**C**: copy; **Ctrl**+**Shift**+**V**: paste)
       ```
         XTerm.vt100.translations:       #override \n \
@@ -60,8 +59,8 @@
       > Checking for X11-clipboard support in terminal, check the result: ```vim --version```  
       > ***-clipboard*** or ***-xterm_clipboard***: clipboard does not support  
       > ***+clipboard*** or ***+xterm_clipboard***: clipboard does support
-    - **Ext-enable** copy/paste
-        (**Shift**+**Home**|**Shift**+**Insert**|**Ctrl**+**Shift**+**C**: copy; **Ctrl**+**Shift**+v: paste )
+    - **Ext-enable** copy/paste  
+        (**Shift**+**Home**|**Shift**+**Insert**|**Ctrl**+**Shift**+**C**: copy; **Ctrl**+**Shift**+**V**: paste )
       ```
         XTerm.vt100.translations:       #override        \n \
            Shift <Key>Home:     copy-selection(SELECT)   \n \
@@ -69,14 +68,14 @@
            Ctrl Shift <Key>C:   copy-selection(SELECT)   \n \
            Ctrl Shift <Key>V:   insert-selection(SELECT) \n 
       ```
-    - Enable PageUp and PageDown Keys
+    - Enable PageUp and PageDown Keys  
       (**Shift**+**PgUp**: page up; **Shift**+**PgDn**: page down)
       ```
         XTerm.vt100.translations:       #override           \n \
            Shift <KeyPress> Prior: scroll-back(1, halfpage) \n \
            Shift <KeyPress> Next : scroll-forw(1, halfpage) \n \  
       ```
-    - Enable switching between font size
+    - Enable switching between font size  
       (**Ctrl**+**+**: zoom in; **Ctrl**+**-**: zoom out)
       ```
         XTerm.vt100.translation:        #override   \n \
