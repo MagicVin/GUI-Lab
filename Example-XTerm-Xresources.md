@@ -102,5 +102,23 @@
          Ctrl <Key>+:  larger-vt-font()            \n \
          Ctrl <Key>-:  smaller-vt-font()  
     ```
-     
+   ## Pointer Usage
+   Once the VTxx window is created. xterm allows you to select text and copy it within the same or other windows using the pointer or the keyboard.  
+   A "Pointer" could be a mouse, touchpad or similar device. X applications generally do not care, since they see only button events which have.  
+   * position
+   * button up/down state 
+
+   Pointer button one(usually left) is used to save text into the cut buffer:
+     ```
+       ~Meta <Btn1Down>: select-start()
+     ```
+   Move the cursor to beginning of the text, and then hold the button down while moving the cursor to the end of the region and releasing the button. The selected text is highlighted and is saved in the global cut buffer and made the selection when the button is released:  
+     ```
+       <BtnUp>: select-end(SELECT, CUT_BUFFER0) \n
+     ```
+   
+   Normally(but see the discussion of on2Clicks, etc):
+   
+   
+   
  
