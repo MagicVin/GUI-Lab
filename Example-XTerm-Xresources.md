@@ -118,6 +118,11 @@
      ```
    
    Normally(but see the discussion of on2Clicks, etc):
+   * Double-clicking selects by words
+   * Triple-clicking selects by lines
+   * Quadruple-clicking goes back to characters, etc.
+   
+   Pointer button two(usually middle)
    
    
    
