@@ -122,8 +122,17 @@
    * Triple-clicking selects by lines
    * Quadruple-clicking goes back to characters, etc.
    
-   Pointer button two(usually middle)
+   Pointer button two(usually middle)  
+     "type"(pastes) the text from the given selection, if any, otherwise from the cut buffer, inserting it as keyboard input:
+       ```
+         ~Ctrl ~Meta <Btn2Ip>: insert-selection(SELECT, CUT_BUFFER0)
+       ```
    
+   Pointer button three(usually right) extends the current selection
+     ```
+       ~Ctrl ~Meta <Btn3Down>: start-extend()
+     ```
+     
    
    
  
