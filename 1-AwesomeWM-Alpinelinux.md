@@ -31,3 +31,20 @@ Packages to install:
 |8. # rc-service lightdm start|
 |9. # reboot|
 |(start with "#" shows the root user, "$" shows the other user )|
+
+**Filling the WM!**
+SW list for the other components  
+* File management:              apk search pcmanfm
+* Image viewer:                 apk add feh feh-doc
+* Draw:                         apk add gimp gimp-do
+* Screen capture:               apk add imagemagick imagemagick-doc
+* Chrome:                       apk add chromium
+* Firefox:                      apk add firefox
+* Menu:                         apk add dmenu
+* Power:                        apk add acpi
+* Screen lock:                  apk add xscreensaver xscreensaver-extras xscreensaver-gl-extras xfontsel
+* Editor:                       apk add geany
+* Bash:                         apk add bash
+* WIFI:                         apk add wireless-tools wpa_supplicant
+
+
