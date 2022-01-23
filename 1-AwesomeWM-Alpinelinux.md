@@ -79,3 +79,4 @@ fc-cache -f
 > Note: [eta.sh](https://github.com/MagicVin/GUI-Lab/blob/main/eta.sh) needs to be stored under $PATH (like /usr/bin)  
 > eta.sh is rc.lua's friend who manages many scripts so that rc.lua could be a general
 
+![key-bindings](https://github.com/MagicVin/GUI-Lab/blob/main/key-bingings.png)
