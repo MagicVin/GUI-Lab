@@ -343,6 +343,35 @@ globalkeys = gears.table.join(
     awful.key({}, "F8",   function () awful.util.spawn_with_shell("eta.sh WIFI_Press") end,
               {description = "WIFI on/off", group = "app"}),
 
+        -- image editor
+    awful.key({ modkey }, "p",   function () awful.util.spawn("krita") end,
+              {description = "image editor", group = "app"}),
+
+    -- turn up audio voice 
+    awful.key({}, "F3",   function () awful.util.spawn("pulseaudio-ctl up") end,
+              {description = "turn up audio voice", group = "app"}),
+
+    -- turn down audio voice 
+    awful.key({}, "F2",   function () awful.util.spawn("pulseaudio-ctl down") end,
+              {description = "turn down audio voice", group = "app"}),
+
+              
+    -- un/mute audio voice 
+    awful.key({}, "F1",   function () awful.util.spawn("pulseaudio-ctl mute") end,
+              {description = "un/mute audio voice", group = "app"}),
+
+    -- reader
+    awful.key({ modkey, "Shift" }, "F12",   function () awful.util.spawn("okular") end,
+              {description = "reader", group = "app"}),
+
+    -- geany
+    awful.key({ modkey }, "e",   function () awful.util.spawn("geany") end,
+              {description = "text editor", group = "app"}),
+    
+    -- shell theme
+    awful.key({ modkey }, "c",   function () awful.util.spawn("color_terminal") end,
+              {description = "shell theme", group = "app"}),
+
     awful.key({ modkey }, "x",
               function ()
                   awful.prompt.run {
